@@ -2,6 +2,9 @@ images
 output
 _models
 .idea/
+_tf_models
+_tfjs_models
+_onnx_models
 posenet/__pycache__/
-posenet/converter/__pycache__/
+converter/__pycache__/
 posenet/models/__pycache__/
