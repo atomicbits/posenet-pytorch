@@ -1,0 +1,7 @@
+images
+output
+_models
+.idea/
+posenet/__pycache__/
+posenet/converter/__pycache__/
+posenet/models/__pycache__/
