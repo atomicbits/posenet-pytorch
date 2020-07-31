@@ -2,6 +2,6 @@
 
 work=$(pwd)
 gpu_opts="--gpus all"
-image="posenet-pytorch"
+image="pytorch-runtime"
 
 docker run $gpu_opts -it --rm -v $work:/work "$image" "$@"

@@ -50,7 +50,7 @@ def main():
             display_image, pose_scores, keypoint_scores, keypoint_coords,
             min_pose_score=0.15, min_part_score=0.1)
 
-        cv2.imshow('posenet', overlay_image)
+        cv2.imshow('pytorch-runtime', overlay_image)
         frame_count += 1
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break

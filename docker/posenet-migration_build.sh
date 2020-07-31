@@ -1,16 +1,12 @@
 #!/usr/bin/env bash
 
-image="posenet-pytorch"
+image="posenet-migration"
 
 original_dir=$(pwd)
 cd "$(dirname "$0")" # move into folder where this script is located
 
-mkdir tmp
-cp ../requirements.txt ./tmp/
-
 docker rmi -f "$image"
 
-docker build -t "$image" .
+docker build -t "$image" posenet-migration
 
-rm -rf tmp
 cd "$original_dir"
