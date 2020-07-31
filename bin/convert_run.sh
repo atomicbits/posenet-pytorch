@@ -8,7 +8,7 @@ quant_bytes=4
 
 model_folder="$model"
 if [ "$quant_bytes" ]; then
-  model_folder="${model_folder}_float" # quant bytes 4 => '_float'; other x => '_quantx'
+  model_folder="${model_folder}_float" # quant bytes 4 => '_float'; quant bytes x => '_quantx'
 fi
 
 source_folder="_tf_models/posenet/${model_folder}/stride${stride}"
