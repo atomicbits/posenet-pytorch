@@ -32,20 +32,6 @@ def main():
         tfjs2tf.convert(model_cfg)
         assert os.path.exists(model_path)
 
-    # loaded_model = tf.saved_model.load(model_path)
-    # signature_key = tf.compat.v1.saved_model.signature_constants.DEFAULT_SERVING_SIGNATURE_DEF_KEY
-    # print('We use the signature key %s It should be in the keys list:' % signature_key)
-    # for sig in loaded_model.signatures.keys():
-    #     print('signature key: %s' % sig)
-    # model_function = loaded_model.signatures[signature_key]
-    # print('model outputs: %s' % model_function.structured_outputs)
-    # output_tensor_names = model_cfg['output_tensors']
-    # output_stride = model_cfg['output_stride']
-    # if model == config.RESNET50_MODEL:
-    #     net = ResNet(model_function, output_tensor_names, output_stride)
-    # else:
-    #     net = MobileNet(model_function, output_tensor_names, output_stride)
-    # return PoseNet(net)
     return
 
 

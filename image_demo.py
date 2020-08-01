@@ -5,7 +5,7 @@ import os
 import torch
 
 import posenet
-
+from posenet.models import ResNet50
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--model', type=int, default=101)
@@ -17,7 +17,8 @@ args = parser.parse_args()
 
 
 def main():
-    model = posenet.load_model(args.model)
+    # model = posenet.load_model(args.model)
+    model = ResNet50("_onnx_models/posenet/resnet50_float/stride16/model.onnx")
     model = model.cuda()
     output_stride = model.output_stride
 

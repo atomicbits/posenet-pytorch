@@ -1,5 +1,10 @@
+torchvision==0.7.0
+torch==1.6.0
 opencv_python_headless==3.4.5.20
 scipy==1.4.1
+onnx==1.7.0
+protobuf==3.12.4 # needed for onnx
+future==0.18.2   # needed for onnx
 # numpy==1.18.5 (already in the container)
 # PyYAML==5.3.1 (already in the container)
 
